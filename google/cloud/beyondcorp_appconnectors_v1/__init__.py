@@ -13,6 +13,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+from google.cloud.beyondcorp_appconnectors import gapic_version as package_version
+
+__version__ = package_version.__version__
+
 
 from .services.app_connectors_service import AppConnectorsServiceClient
 from .services.app_connectors_service import AppConnectorsServiceAsyncClient
