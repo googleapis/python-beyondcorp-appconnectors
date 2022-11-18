@@ -18,23 +18,27 @@ from google.cloud.beyondcorp_appconnectors import gapic_version as package_versi
 __version__ = package_version.__version__
 
 
-from .services.app_connectors_service import AppConnectorsServiceClient
-from .services.app_connectors_service import AppConnectorsServiceAsyncClient
-
-from .types.app_connector_instance_config import AppConnectorInstanceConfig
-from .types.app_connector_instance_config import ImageConfig
-from .types.app_connector_instance_config import NotificationConfig
-from .types.app_connectors_service import AppConnector
-from .types.app_connectors_service import AppConnectorOperationMetadata
-from .types.app_connectors_service import CreateAppConnectorRequest
-from .types.app_connectors_service import DeleteAppConnectorRequest
-from .types.app_connectors_service import GetAppConnectorRequest
-from .types.app_connectors_service import ListAppConnectorsRequest
-from .types.app_connectors_service import ListAppConnectorsResponse
-from .types.app_connectors_service import ReportStatusRequest
-from .types.app_connectors_service import UpdateAppConnectorRequest
-from .types.resource_info import ResourceInfo
-from .types.resource_info import HealthStatus
+from .services.app_connectors_service import (
+    AppConnectorsServiceAsyncClient,
+    AppConnectorsServiceClient,
+)
+from .types.app_connector_instance_config import (
+    AppConnectorInstanceConfig,
+    ImageConfig,
+    NotificationConfig,
+)
+from .types.app_connectors_service import (
+    AppConnector,
+    AppConnectorOperationMetadata,
+    CreateAppConnectorRequest,
+    DeleteAppConnectorRequest,
+    GetAppConnectorRequest,
+    ListAppConnectorsRequest,
+    ListAppConnectorsResponse,
+    ReportStatusRequest,
+    UpdateAppConnectorRequest,
+)
+from .types.resource_info import HealthStatus, ResourceInfo
 
 __all__ = (
     "AppConnectorsServiceAsyncClient",
